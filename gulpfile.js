@@ -16,7 +16,7 @@ gulp.task("jade", function() {
     return gulp.src("./app/index.jade")
       .pipe(plumber())
       .pipe(jade())
-      .pipe(gulp.dest("./public/"));
+      .pipe(gulp.dest("./"));
 });
 
 gulp.task("javascript", function() {
