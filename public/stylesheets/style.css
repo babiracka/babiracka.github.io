@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=latin,latin-ext);
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #fafafa; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed; }
+
+.navigation {
+  padding: 0 15vw;
+  z-index: 10;
+  color: #f0f0f0;
+  line-height: 90px; }
+
+.navigation__logo {
+  float: left;
+  width: 80px;
+  margin: 13px 0;
+  height: 64px;
+  background-color: transparent;
+  text-align: center; }
+
+.navigation__list {
+  text-align: right;
+  list-style-type: none;
+  float: right;
+  margin: 0; }
+
+.navigation__list-item {
+  display: inline-block;
+  padding: 0 20px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  transition: background-color, 0.5s; }
+  .navigation__list-item:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 150px; }
+
+.landing__hero {
+  background: url("../images/pattern.svg") fixed no-repeat;
+  background-size: cover;
+  font-family: 'Pacifico';
+  height: 100vh; }
+
+.landing__slogan {
+  position: absolute;
+  top: calc(50vh - 150px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  height: 300px; }
+
+.landing__title {
+  line-height: 150px;
+  margin: 0;
+  font-size: 80px;
+  text-shadow: 5px 5px 20px gray;
+  color: #f0f0f0; }
+
+.landing__button {
+  display: inline-block;
+  line-height: 60px;
+  height: 60px;
+  width: 250px;
+  border-radius: 15px;
+  color: #f0f0f0;
+  margin-top: 30px;
+  font-weight: 700;
+  font-family: "Comfortaa", sans;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 6px;
+  background-color: #F5A623;
+  font-variant: small-caps; }
+
+.about {
+  height: 1000px;
+  z-index: 10;
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto; }
+
+.about__title, .gallery__title, .contact__title {
+  text-align: center;
+  font-size: 56px;
+  margin: 40px;
+  font-family: 'Pacifico', cursive; }
+
+.about__title {
+  padding-top: 64px;
+  text-align: center;
+  cursor: default; }
+
+.about__description {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5; }
+
+.about__avatar {
+  background-image: url("../images/me.jpg");
+  background-position: center;
+  background-size: contain;
+  box-shadow: inset 0px 0px 1px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  float: left;
+  margin-right: 24px; }
+
+.about__description::after, .about__avatar {
+  content: "";
+  display: table;
+  clear: both; }
+
+.about__description-text {
+  height: 250px; }
+
+.gallery__content {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1000px; }
+
+@media (max-width: 480px) {
+  .gallery__content {
+    width: 400px; } }
+
+.gallery__column {
+  display: inline-block;
+  vertical-align: top;
+  width: 320px; }
+
+.box-container {
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .box-container:not(last-child) {
+    margin-right: 20px; }
+
+.box {
+  width: 360px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  transition: transform 0.5s, filter 0.5s, -webkit-filter 0.5s, -moz-filter 0.5s, ease-in-out;
+  transform: translate3d(-40px, 0, 0); }
+
+.box:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+  transform: translate3d(0, 0, 0); }
+
+.box--1 {
+  background-image: url("https://static.pexels.com/photos/108322/pexels-photo-108322.jpeg");
+  height: 400px; }
+
+.box--2 {
+  background-image: url("https://static.pexels.com/photos/91220/pexels-photo-91220-large.jpeg");
+  height: 500px; }
+
+.box--3 {
+  background-image: url("https://static.pexels.com/photos/103858/pexels-photo-103858-large.jpeg");
+  height: 200px; }
+
+.box--4 {
+  background-image: url("https://static.pexels.com/photos/36035/sea-gull-bird-sky-nature-large.jpg");
+  height: 300px; }
+
+.box--5 {
+  background-image: url("https://static.pexels.com/photos/97859/pexels-photo-97859-large.jpeg");
+  height: 200px; }
+
+.box--6 {
+  background-image: url("https://static.pexels.com/photos/103538/pexels-photo-103538-large.jpeg");
+  height: 600px;
+  background-position: 70% 30%; }
+
+.box--7 {
+  background-image: url("https://static.pexels.com/photos/91960/pexels-photo-91960-large.jpeg");
+  height: 600px; }
+
+.box--8 {
+  background-image: url("https://static.pexels.com/photos/45851/bird-blue-cristata-cyanocitta-45851-large.jpeg");
+  height: 300px; }
+
+.box--9 {
+  background-image: url("https://static.pexels.com/photos/9226/animals-birds-owl-fauna-large.jpg");
+  height: 200px; }
+
+.contact-form__input {
+  display: block;
+  margin: 12px 0;
+  padding: 8px 16px;
+  width: 240px;
+  color: #fafafa;
+  background: transparent;
+  border: 2px solid #c1e5f1;
+  font-family: 'Ubuntu', serif;
+  font-size: 16px;
+  font-weight: 300; }
+
+.contact-form__input:focus {
+  outline: none; }

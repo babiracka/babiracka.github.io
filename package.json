@@ -1,0 +1,19 @@
+{
+  "name": "portfolioApp",
+  "version": "1.0.0",
+  "description": "Alina Babiracka - portfolio",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Alina Babiracka",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^3.2.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0"
+  },
+  "dependencies": {
+    "trianglify": "^0.4.0"
+  }
+}
